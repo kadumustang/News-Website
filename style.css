@@ -6,34 +6,85 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
+.image-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 375px;
+    padding: 20px 20px 0 20px;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
+.image-mobile {
+    max-width: 375px;
 }
+
+.image-mobile img {
+    width: 100%;
+    padding: 20px;
+}
+
 header {
-    padding: 10%;
-    text-align: center;
+    background-color: hsl(36, 100%, 99%);
+    color: Grayish hsl(233, 8%, 79%);
+    padding: 20px;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.2em;
+header h1 {
+    text-align: left;
+    font-family: 'Inter';
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
-button {
-    background-color: #2ecc71;
-    color: #fff;
-    font-size: 1em;
-    padding: 10px 20px;
-    /* border: none; */
-    border-radius: 5px;
-    cursor: pointer;
+header p {
+    font-size: 15px;
+    font-family: 'Inter';
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 15px;
 }
+
+header button {
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+.section-info {
+    background-color: hsl(240, 100%, 5%);
+    padding: 10px;
+    margin: 20px;
+}
+
+.section-info h1 {
+    color: hsl(35, 77%, 62%);
+    text-align: left;
+    font-family: 'Inter';
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.section-info article {
+    color: hsl(36, 100%, 99%);
+    text-align: left;
+    font-family: 'Inter';
+    font-family: 700;
+}
+
+.section-info p {
+    padding-bottom: 30px;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+
+
+
+
+

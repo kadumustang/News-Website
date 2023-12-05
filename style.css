@@ -37,6 +37,7 @@ header h1 {
 }
 
 header p {
+    color: hsl(236, 13%, 42%);
     font-size: 15px;
     font-family: 'Inter';
     font-weight: 400;
@@ -52,12 +53,16 @@ header button {
     cursor: pointer;
     font-family: 'Inter';
     font-weight: 400;
+    width: 150px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .section-info {
     background-color: hsl(240, 100%, 5%);
     padding: 10px;
     margin: 20px;
+    border-bottom: 2px #fff;
 }
 
 .section-info h1 {
@@ -77,11 +82,69 @@ header button {
 
 .section-info p {
     padding-bottom: 30px;
+    color: hsl(236, 13%, 42%);
+}
+
+.section-info h2 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.article {
+    border-bottom: 2px #fff;
 }
 
 button:hover {
     background-color: #27ae60;
 }
+
+.section {
+    background-color: hsl(36, 100%, 99%);
+}
+
+.section h3 {
+    color: hsl(240, 100%, 5%);
+    text-align: left;
+    font-family: 'Inter';
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.section article {
+    color: hsl(233, 8%, 79%);
+    text-align: left;
+    font-family: 'Inter';
+    font-family: 700;
+}
+
+.section p {
+    padding-bottom: 10px;
+    color: hsl(236, 13%, 42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.section special-number {
+    color: hsl(233, 8%, 79%);
+}
+
+.section img {
+    width: 120px;
+    padding: 20px;
+}
+
+.section h3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
 
 
 

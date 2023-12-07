@@ -1,153 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins&family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
 
 * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 .image-logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 375px;
-    padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 375px;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .image-mobile {
-    max-width: 375px;
+  max-width: 375px;
 }
 
 .image-mobile img {
-    width: 100%;
-    padding: 20px;
+  width: 90%;
+  padding: 0.5rem;
 }
 
 header {
-    background-color: hsl(36, 100%, 99%);
-    color: Grayish hsl(233, 8%, 79%);
-    padding: 20px;
+  background-color: var (--Off-white);
+  color: var(--Grayish-blue);
+  padding: 0.5rem;
 }
 
 header h1 {
-    text-align: left;
-    font-family: 'Inter';
-    font-weight: 700;
-    margin-bottom: 20px;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 header p {
-    color: hsl(236, 13%, 42%);
-    font-size: 15px;
-    font-family: 'Inter';
-    font-weight: 400;
-    text-align: left;
-    margin-bottom: 15px;
+  color: hsl(236, 13%, 42%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
 header button {
-    background-color: hsl(5, 85%, 63%);
-    color: hsl(36, 100%, 99%);
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Inter';
-    font-weight: 400;
-    width: 150px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  width: 15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
-.section-info {
-    background-color: hsl(240, 100%, 5%);
-    padding: 10px;
-    margin: 20px;
-    border-bottom: 2px #fff;
+.news-section {
+  background-color: hsl(240, 100%, 5%);
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
-.section-info h1 {
-    color: hsl(35, 77%, 62%);
-    text-align: left;
-    font-family: 'Inter';
-    font-weight: 700;
-    padding-bottom: 30px;
+.news-title {
+  color: hsl(35, 77%, 62%);
+  text-align: left;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  font-size: 3rem;
 }
 
-.section-info article {
-    color: hsl(36, 100%, 99%);
-    text-align: left;
-    font-family: 'Inter';
-    font-family: 700;
+.article-title {
+  color: hsl(36, 100%, 99%);
+  text-align: left;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
-.section-info p {
-    padding-bottom: 30px;
-    color: hsl(236, 13%, 42%);
+.article-content {
+  color: hsl(236, 13%, 42%);
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+.news-section article {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+  padding-bottom: 0.5rem;
+}
+
+.news-section article:last-child {
+  border-bottom: none;
 }
 
 .section-info h2 {
-    color: white;
-    font-size: 20px;
-    font-family: 'Inter';
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.article {
-    border-bottom: 2px #fff;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
 button:hover {
-    background-color: #27ae60;
+  background-color: #27ae60;
 }
 
-.section {
-    background-color: hsl(36, 100%, 99%);
+.article-info {
+  display: flex;
+  align-items: center;
 }
 
-.section h3 {
-    color: hsl(240, 100%, 5%);
-    text-align: left;
-    font-family: 'Inter';
-    font-weight: 700;
-    padding-bottom: 10px;
+.article-image img {
+  max-width: 100%;
 }
 
-.section article {
-    color: hsl(233, 8%, 79%);
-    text-align: left;
-    font-family: 'Inter';
-    font-family: 700;
+.article-text {
+  margin-left: 20px;
 }
 
-.section p {
-    padding-bottom: 10px;
-    color: hsl(236, 13%, 42%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
+.special-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(233, 8%, 79%);
 }
 
-.section special-number {
-    color: hsl(233, 8%, 79%);
+.title-article {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #333;
 }
-
-.section img {
-    width: 120px;
-    padding: 20px;
-}
-
-.section h3 {
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-}
-
-
-
-
-
-
-

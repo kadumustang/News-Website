@@ -60,6 +60,7 @@ header button {
     width: 11rem;
     letter-spacing: 0.4rem;
     margin: 1rem;
+    border: none;
 }
 
 .news-section {

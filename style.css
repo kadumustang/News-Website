@@ -35,6 +35,11 @@ body {
     width:  100%;
 }
 
+.image-desktop img {
+    padding: 1rem;
+    width:  50%;
+}
+
 header p {
     color: var(--dark-grayish-blue);
     font-size: 1.25rem;
@@ -149,5 +154,112 @@ button:hover {
     color: var(--dark-grayish-blue);
 }
 
+.article {
+    margin-bottom: 20px;
+}
 
+.image-mobile {
+    display: block;
+}
+
+.image-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .image-mobile {
+        display: none;
+    }
+
+    .image-desktop {
+        display: block;
+    }
+
+    .news-section {
+        max-width: 768px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .article {
+        width: 50%;
+        display: inline-block;
+        margin-right: 2%;
+    }
+
+    header {
+        text-align: left;
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        font-family: 'Inter';
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--very-dark-blue);
+    }
+
+    header p {
+        color: var(--dark-grayish-blue);
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    header button {
+        background-color: var(--Soft-red);
+        color: var(--Off-white);
+        padding: 1rem;
+        cursor: pointer;
+        font-weight: 600;
+        width: 11rem;
+        letter-spacing: 0.4rem;
+        margin: 1rem;
+        border: none;
+    }   
+
+    .news-section article:last-child {
+        border-bottom: 1px solid var(--dark-grayish-blue);
+        padding-bottom: 0.5rem;
+    }
+
+    .article {
+        width: 30%;
+    }
+
+    .product-info {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+
+    .article-info {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .article-image img {
+        width: 130px;
+    }
+    
+    .article-text {
+        margin-left: 1rem;
+    }
+
+    .special-number {
+        font-size: 1.5rem;
+    }
+
+    .title-article {
+        font-size: 1rem;
+    }
+
+    .content-title {
+        font-size: 1rem;
+    }
+}
 

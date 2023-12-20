@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Inter, sans-serif;
 }
 
 html {
@@ -20,58 +21,104 @@ html {
 }
 
 body {
-    font-family: 'Inter' sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
 }
 
-.image-logo {
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem 1rem 1rem;;
-}
-
-.image-mobile img {
+    justify-content: space-between;
     padding: 1rem;
-    width:  100%;
 }
 
-.image-desktop img {
+img {
+    max-width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 1rem;
-    width:  50%;
 }
 
-header p {
+ul {
+    list-style-type: none;
+}
+
+.showcase {
+    width: 50%;
+}
+
+.showcase {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.showcase h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--very-dark-blue);
+    margin: 1rem 0;
+}
+
+.showcase p {
     color: var(--dark-grayish-blue);
     font-size: 1.25rem;
     font-weight: 400;
     text-align: left;
-    padding: 1rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 
-header h1 {
-    font-family: 'Inter';
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 1.25rem;
-    color: var(--very-dark-blue);
-}
-
-header button {
+.showcase button {
     background-color: var(--Soft-red);
-    color: var(--Off-white);
-    padding: 1rem;
-    cursor: pointer;
-    font-weight: 600;
-    width: 11rem;
-    letter-spacing: 0.4rem;
-    margin: 1rem;
+    color: var(--Off-white); 
+    padding: 0.8rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
     border: none;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.cards p {
+    border-bottom: 1px solid var(--dark-grayish-blue); 
+    padding: 1rem 0;
+}
+
+.cards:last-child p {
+    border-bottom: none;
+}
+
+.cards {
+    padding: 0.5rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.cards h3:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
 }
 
 .news-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.news-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: var(--very-dark-blue);
     color: var(--Off-white);
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 1rem;
     font-family: 'Inter';
 }
@@ -112,154 +159,77 @@ header button {
 }
   
 .product-info {
-    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
 }
 
-button:hover {
-    background-color: #27ae60;
-}
-
-.article-info {
+.product-info article {
     display: flex;
     align-items: center;
-    padding: 1rem 0;
+    gap: 1rem;
 }
 
-.article-image img {
+.product-info img {
     width: 130px;
 }
 
-.article-text {
-    margin-left: 1rem;
-}
-
-.special-number {
+.product-info span {
+    color: var(--Grayish-blue);
     font-size: 2rem;
     font-weight: bold;
-    color: var(--Grayish-blue);
+    opacity: 75%;
+    gap: 1rem;
+    padding: 0.5rem 0;
 }
 
-.title-article {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--very-dark-blue);
-}
-
-.content-title {
+.product-info h4 {
     font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5;
+    color: var(--very-dark-blue);
     margin: 1rem 0;
-    color: var(--dark-grayish-blue);
+    padding: 0.5rem 0;
 }
 
-.article {
-    margin-bottom: 20px;
+.product-info h4:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
 }
 
-.image-mobile {
-    display: block;
+@media (min-width: 1440px) {
+.header {
+   padding: 2rem 1.25rem;
 }
 
-.image-desktop {
+.header #menu-button button {
     display: none;
 }
 
-@media (min-width: 768px) {
-
-    .image-mobile {
-        display: none;
-    }
-
-    .image-desktop {
-        display: block;
-    }
-
-    .news-section {
-        max-width: 768px;
-        display: flex;
-        justify-content: left;
-    }
-
-    .article {
-        width: 50%;
-        display: inline-block;
-        margin-right: 2%;
-    }
-
-    header {
-        text-align: left;
-        padding: 1rem 0;
-    }
-
-    header h1 {
-        font-family: 'Inter';
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--very-dark-blue);
-    }
-
-    header p {
-        color: var(--dark-grayish-blue);
-        font-size: 1.25rem;
-        font-weight: 400;
-        text-align: left;
-        padding: 1rem;
-    }
-
-    header button {
-        background-color: var(--Soft-red);
-        color: var(--Off-white);
-        padding: 1rem;
-        cursor: pointer;
-        font-weight: 600;
-        width: 11rem;
-        letter-spacing: 0.4rem;
-        margin: 1rem;
-        border: none;
-    }   
-
-    .news-section article:last-child {
-        border-bottom: 1px solid var(--dark-grayish-blue);
-        padding-bottom: 0.5rem;
-    }
-
-    .article {
-        width: 30%;
-    }
-
-    .product-info {
-        display: flex;
-        justify-content: space-around;
-        margin: 1rem;
-    }
-
-    .article-info {
-        width: 30%;
-        display: flex;
-        align-items: center;
-        padding: 1rem 0;
-    }
-
-    .article-image img {
-        width: 130px;
-    }
-    
-    .article-text {
-        margin-left: 1rem;
-    }
-
-    .special-number {
-        font-size: 1.5rem;
-    }
-
-    .title-article {
-        font-size: 1rem;
-    }
-
-    .content-title {
-        font-size: 1rem;
-    }
+.showcase {
+    display: flex;
+    gap: 2rem;
 }
 
+.showcase h1 {
+    font-size: 3rem;
+}
+
+.showcase > div:first-child article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.showcase > div:last-child {
+    margin-top: 0;
+}
+
+.product-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    place-items: center;
+    margin-top: 2rem;
+}
